@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
     <title>HTML FORMS</title>
 </head>
 
@@ -10,9 +14,17 @@
 <body>
     <h1>Survey Form</h1>
     <form class="form-data" >
-        <input type="text" placeholder="Enter yourname" required />
-        <input type="text"  placeholder="Enter your email address" required />
-        <input type="password" placeholder="Enter your password" required />
+        <input type="text" class="name-form"
+        placeholder="Enter yourname"
+         required />
+
+        <input type="text"  class="mail-form"
+        placeholder="Enter your email address" 
+        required />
+
+        <input type="password" class="word-form"
+        placeholder="Enter your password" 
+        required />
 <label for="gender">Select your gender:</label>
 <select id="gender" name = "gender">
     <option value="Female">Female</option>
@@ -20,6 +32,7 @@
 </select>
 <label for="Age">Select the option that best describes your age</label>
 <select name="Age" id="Age">
+<option value="Between 15 && 17">15-17</option>
 <option value="Between 18 && 25">18-25</option>
 <option value="Between 25 && 30">25-30</option>
 <option value="Between 31 && 45">31-45</option>
